@@ -9,6 +9,7 @@ import Footer from './components/footer/Footer'
 import Policies from './components/footer/footerLink/Policies'
 import Technology from "./components/pages/technology/Technology";
 import Agnibaan from './components/Agnibaan/Agnibaan.jsx';
+import Book from "./components/booklaunch/Book.jsx"
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/policies" element={<Policies />} />
         <Route path="/technology" element={<Technology />} />
         <Route path="/agnibaan" element={<Agnibaan />} />
+        <Route path="/book-launch" element= {<Book/>} />
       </Routes>
       <Footer />
     </BrowserRouter>
