@@ -31,7 +31,7 @@ const Navbar = () => {
                     </li>
                     <li>
                         <a
-                            href="/About"
+                            href="/about"
                             className="hover:text-[#4caf50] transition text-[clamp(0.75rem, 1vw, 1.25rem)] ml-4"
                         >
                             About
@@ -39,7 +39,7 @@ const Navbar = () => {
                     </li>
                     <li>
                         <a
-                            href="/Technology"
+                            href="/technology"
                             className="hover:text-[#4caf50] transition text-[clamp(0.75rem, 1vw, 1.25rem)]"
                         >
                             Technology
@@ -47,7 +47,7 @@ const Navbar = () => {
                     </li>
                     <li>
                         <a
-                            href="/Careers"
+                            href="/careers"
                             className="hover:text-[#4caf50] mr-4 transition text-[clamp(0.75rem, 1vw, 1.25rem)]"
                         >
                             Careers
@@ -55,7 +55,7 @@ const Navbar = () => {
                     </li>
                     <li>
                         <a
-                            href="/Contact"
+                            href="/contact"
                             className="hover:text-[#4caf50] transition text-[clamp(0.75rem, 1vw, 1.25rem)] mr-4"
                         >
                             Contact
@@ -102,7 +102,7 @@ const Navbar = () => {
                     {/* Mobile View */}
                     <ul
                         className={`${isOpen ? "block" : "hidden"
-                            } absolute right-0 mt-11 w-full bg-white border shadow-lg text-black p-4 border-t-6`}
+                            } absolute right-0 mt-11 w-full bg-white border shadow-lg text-black p-4 border-t-6 z-10`}
                     >
                         <li>
                             <a href="/" className="block px-4 py-2 hover:bg-[#4caf50]">
@@ -110,25 +110,25 @@ const Navbar = () => {
                             </a>
                         </li>
                         <li>
-                            <a href="/About" className="block px-4 py-2 hover:bg-[#4caf50]">
+                            <a href="/about" className="block px-4 py-2 hover:bg-[#4caf50]">
                                 About
                             </a>
                         </li>
                         <li>
                             <a
-                                href="/Technology"
+                                href="/technology"
                                 className="block px-4 py-2 hover:bg-[#4caf50]"
                             >
                                 Technology
                             </a>
                         </li>
                         <li>
-                            <a href="/Careers" className="block px-4 py-2 hover:bg-[#4caf50]">
+                            <a href="/careers" className="block px-4 py-2 hover:bg-[#4caf50]">
                                 Careers
                             </a>
                         </li>
                         <li>
-                            <a href="/Contact" className="block px-4 py-2 hover:bg-[#4caf50]">
+                            <a href="/contact" className="block px-4 py-2 hover:bg-[#4caf50]">
                                 Contact
                             </a>
                         </li>

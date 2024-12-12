@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Card from "../../Card/Card";
+import videoUrl from "../../../assets/rocket.mp4"
 
 function Home() {
   const objs = [
@@ -22,7 +23,7 @@ function Home() {
     <>
       <div className="w-full h-screen relative">
         <video className="h-screen w-screen object-cover" autoPlay loop muted>
-          <source src="/src/assets/rocket.mp4" type="video/mp4" />
+          <source src={videoUrl} type="video/mp4" />
         </video>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ">
           <h1 className="lg:text-6xl font-extrabold text-center bg-clip-text text-transparent bg-gradient-to-r from-white to-white  md:text-4xl  sm: text-4xl">
