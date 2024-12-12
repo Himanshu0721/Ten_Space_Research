@@ -1,0 +1,38 @@
+.rocket-horizontal {
+    left: 50%;
+    top: 40%;
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    width: 75.76%;
+}
+
+.original-div>div {
+    position: relative;
+}
+
+.rocket-1 {
+    margin-right: -4.5%;
+    width: 22.5%;
+}
+
+.original-div img {
+    vertical-align: middle;
+}
+
+.rocket-2 {
+    margin-right: -6.9%;
+    width: 22.5%;
+}
+
+.rocket-3 {
+    width: 70%;
+}
+
+.rocket-horizontal, .rocket-horizontal-2 {
+    display: inline-flex;
+    margin-bottom: 2%;
+    z-index: -100000;
+}
