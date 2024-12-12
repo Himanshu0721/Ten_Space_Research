@@ -11,7 +11,6 @@ import Technology from "./components/pages/technology/Technology";
 import Agnibaan from './components/Agnibaan/Agnibaan.jsx';
 
 
-
 function App() {
   return (
     <BrowserRouter>
@@ -23,6 +22,7 @@ function App() {
         <Route path="/conditions" element={<Conditions />} /> 
         <Route path="/policies" element={<Policies />} />
         <Route path="/technology" element={<Technology />} />
+        <Route path="/agnibaan" element={<Agnibaan />} />
       </Routes>
       <Footer />
     </BrowserRouter>
