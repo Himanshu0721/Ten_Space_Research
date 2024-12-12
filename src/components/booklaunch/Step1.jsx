@@ -11,15 +11,15 @@ const Step1 = () => {
     const getMapSrc = () => {
         switch (formData.LaunchLocation) {
             case "Asia Pacific":
-                return "https://agnikul.in/static/media/Asiapacific.aa4b17e04774ddfa2f41.png";
+                return "https://agnikul.in/static/media/blank.76710598bd1b6a29cbcf.png";
             case "India":
                 return "https://agnikul.in/static/media/India.55558117c9de909157ab.png";
             case "Northern America":
                 return "https://agnikul.in/static/media/Northernamerica.811ace263181b7c726fc.png";
             case "Northern Europe":
                 return "https://agnikul.in/static/media/Northerneurope.72937c0971e5b98a631e.png";
-            default:
-                return "";
+            // default:
+            //     return "";
         }
     };
 
