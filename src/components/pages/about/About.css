@@ -1,0 +1,132 @@
+.vertical-line {
+    border-left: 1px solid #4d8c52;
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    z-index: -10000;
+}
+
+
+.timeline-year {
+    background: #fff;
+    display: inline-block;
+    height: 2rem;
+    margin: 1% 0;
+    text-align: center;
+    transform: rotate(45deg);
+    width: 2rem;
+}
+
+.timeline-text {
+    color: #21384299;
+    font-family: Poppins Regular;
+    font-size: 16px;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    text-align: center;
+}
+
+.timeline {
+    margin-top: -2%;
+    padding-top: 2%;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.timeline-section {
+    background-color: #fff;
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 90%;
+}
+
+.timeline-year p {
+    color: #4d8c52;
+    font-family: Poppins Bold;
+    font-size: 1.3rem;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: normal;
+    line-height: 1.5;
+    margin-bottom: 0;
+    padding: 6%;
+    text-align: center;
+    transform: translateY(25%) rotate(-45deg);
+}
+
+@media (min-width: 1024px) {
+    .lg\:px-48 {
+        padding-left: 15rem;
+        padding-right: 15rem;
+    }
+}
+
+.intermediate-banner {
+    background: #1a1b20;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    padding-left: 6.9%;
+    position: relative;
+    width: 100%;
+}
+
+.intermediate-img {
+    bottom: 0;
+    left: auto;
+    position: absolute;
+    right: 0;
+    top: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .intermediate-banner {
+        height: 40vh;
+    }
+}
+
+.intermediate-img {
+    bottom: 0;
+    left: auto;
+    position: absolute;
+    right: 0;
+    top: auto;
+}
+
+.intermediate-img {
+    vertical-align: middle;
+}
+
+
+.intermediate-banner-content {
+    position: absolute;
+    text-align: left;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 49.2%;
+}
+
+.intermediate-banner-title {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.44;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .intermediate-banner-title {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .intermediate-banner-content {
+        top: 30%;
+        width: auto;
+    }
+}
