@@ -12,7 +12,7 @@ const Navbar = () => {
 
     return (
         <nav className="bg-white shadow-lg">
-            <div className="fix-container mx-auto px-4 flex justify-between items-center h-28 lg:justify-evenly">
+            <div className="fix-container mx-auto px-4 flex justify-between items-center h-20 lg:justify-evenly">
                 {/* Logo and Title */}
                 <div className="flex flex-row items-center lg:items-center">
                     <img
@@ -20,7 +20,7 @@ const Navbar = () => {
                         alt="Logo"
                         className="w-12 h-12 lg:w-14 lg:h-14 mr-4"
                     />
-                    <div className="font-bold text-[#4caf50] lg:order-none order-1 w-full lg:w-auto text-start lg:text-left text-2xl sm:text-xl lg:text-2xl">
+                    <div className="font-bold text-[#4caf50] lg:order-none order-1 w-full lg:w-auto text-start lg:text-left text-2xl sm:text-xl lg:text-xl xl:text-2xl">
                         TEN SPACE RESEARCH
                     </div>
                 </div>
@@ -30,7 +30,7 @@ const Navbar = () => {
                     <li>
                         <a
                             href="/"
-                            className="hover:text-[#4caf50] transition text-[clamp(0.75rem, 1vw, 1.25rem)] ml-6"
+                            className="hover:text-[#4caf50] transition text-[clamp(0.75rem, 1vw, 1.25rem)] ml-4"
                         >
                             Home
                         </a>
@@ -38,7 +38,7 @@ const Navbar = () => {
                     <li>
                         <a
                             href="/about"
-                            className="hover:text-[#4caf50] transition text-[clamp(0.75rem, 1vw, 1.25rem)] ml-4"
+                            className="hover:text-[#4caf50] transition text-[clamp(0.75rem, 1vw, 1.25rem)]"
                         >
                             About
                         </a>
@@ -54,7 +54,7 @@ const Navbar = () => {
                     <li>
                         <a
                             href="/careers"
-                            className="hover:text-[#4caf50] mr-4 transition text-[clamp(0.75rem, 1vw, 1.25rem)]"
+                            className="hover:text-[#4caf50] transition text-[clamp(0.75rem, 1vw, 1.25rem)]"
                         >
                             Careers
                         </a>
@@ -70,14 +70,14 @@ const Navbar = () => {
                 </ul>
 
                 {/* Laptop View Buttons */}
-                <div className="hidden lg:flex space-x-4">
+                <div className="hidden lg:flex space-x-2">
                     <Link to="/shop">
-                        <button className="mr-4 border-2 border-[#3e8e41] text-[#3e8e41] px-4 py-2 rounded-md hover:bg-[#3e8e41] hover:text-white transition text-sm lg:text-xs xl:text-lg">
+                        <button className="mr-4 border-2 border-[#3e8e41] text-[#3e8e41] px-2 py-1 rounded-md hover:bg-[#3e8e41] hover:text-white transition text-sm lg:text-sm xl:text-lg">
                             Shop Now
                         </button>
                     </Link>
                     <Link to="/book-launch">
-                        <button className="bg-[#3e8e41] text-white px-4 py-2 rounded-md border-2 hover:text-[#3e8e41] hover:bg-white hover:border-[#3e8e41] transition text-sm lg:text-xs xl:text-lg">
+                        <button className="bg-[#3e8e41] border-[#3e8e41] text-white px-4 py-1 rounded-md border-2 hover:text-[#3e8e41] hover:bg-white hover:border-[#3e8e41] transition text-sm lg:text-sm xl:text-lg">
                             Book a Launch
                         </button>
                     </Link>
@@ -112,7 +112,7 @@ const Navbar = () => {
                     {/* Mobile View */}
                     <ul
                         className={`${isOpen ? "block" : "hidden"
-                            } absolute right-0 mt-11 w-full bg-white border shadow-lg text-black p-4 border-t-6 z-10`}
+                            } absolute right-0 mt-6 w-full bg-white border shadow-lg text-black p-4 border-t-6 z-10`}
                     >
                         <li onClick={closeDropdown}>
                             <a href="/" className="block px-4 py-2 hover:bg-[#4caf50]">
