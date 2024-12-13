@@ -8,6 +8,7 @@ import Conditions from './components/footer/footerLink/Conditions'
 import Footer from './components/footer/Footer'
 import Policies from './components/footer/footerLink/Policies'
 import Technology from "./components/pages/technology/Technology";
+import Book from "./components/booklaunch/Book"
 
 
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/Conditions" element={<Conditions />} /> 
         <Route path="/Policies" element={<Policies />} />
         <Route path="/Technology" element={<Technology />} />
+        <Route path="/Book" element={<Book />} />
       </Routes>
       <Footer />
     </BrowserRouter>
