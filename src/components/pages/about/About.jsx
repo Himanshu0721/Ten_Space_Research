@@ -1,13 +1,15 @@
-import React from 'react'
+import Jumbotron from "./Jumbotron";
+import History from "./History";
+import Banner from "./Banner";
+import Team from "./Team";
 
-
-function About() {
-  return (
-   <>
-<h1>hi</h1>
-   
-   </>
-  )
+export default function About() {
+    return(
+        <>
+        <Jumbotron/>
+        <History/>
+        <Banner/>
+        <Team/>
+        </>
+    );
 }
-
-export default About
