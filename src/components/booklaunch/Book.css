@@ -1,0 +1,251 @@
+   /* General Styles */
+   .contact-section {
+    max-width: 800px; /* Updated max-width */
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.contact-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.contact-description {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Form Styles */
+.form-group-container {
+    margin-bottom: 40px;
+}
+
+h3 {
+    color: #4CAF50;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 30px 0 20px;
+}
+
+.form-group {
+    margin-bottom: 15px; /* Updated margin-bottom */
+}
+
+/* Input and Select Styles */
+.form-input,
+select {
+    width: 100%;
+    padding: 12px; /* Updated padding */
+    font-size: 14px; /* Updated font-size */
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    background-color: white;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.form-input::placeholder {
+    color: #666;
+}
+
+.form-input:focus,
+select:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+/* Map Container */
+.map-container {
+    margin: 20px 0;
+}
+
+.map-container img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Terms Container */
+.terms-container {
+    margin: 20px 0;
+}
+
+.terms-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #666;
+    font-size: 14px;
+}
+
+.terms-link {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.terms-link:hover {
+    text-decoration: underline;
+}
+
+/* Button Styles */
+.form-submit {
+    width: auto; /* Updated width */
+    padding: 12px 24px; /* Updated padding */
+    font-size: 14px; /* Updated font-size */
+    font-weight: 600;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-flex; /* Updated display */
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px; /* Added margin-top */
+}
+
+.form-submit:hover {
+    background-color: #45a049;
+}
+
+.button-icon {
+    font-size: 20px;
+}
+
+
+ /* Responsive Styles */
+@media (max-width: 1024px) {
+    .contact-section {
+      max-width: 90%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .contact-section {
+      max-width: 95%;
+      padding: 15px;
+      margin: 20px auto;
+    }
+  
+    .contact-title {
+      font-size: 28px;
+    }
+  
+    .contact-description {
+      font-size: 14px;
+    }
+  
+    h3 {
+      font-size: 16px;
+      margin: 25px 0 15px;
+    }
+  
+    .form-input,
+    select {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .form-submit {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-section {
+      padding: 10px;
+    }
+  
+    .contact-title {
+      font-size: 24px;
+    }
+  
+    .contact-description {
+      font-size: 13px;
+    }
+  
+    h3 {
+      font-size: 15px;
+      margin: 20px 0 10px;
+    }
+  
+    .form-group {
+      margin-bottom: 12px;
+    }
+  
+    .form-input,
+    select {
+      padding: 8px;
+      font-size: 13px;
+    }
+  
+    .terms-label {
+      font-size: 12px;
+    }
+  
+    .form-submit {
+      padding: 10px 18px;
+      font-size: 13px;
+    }
+  
+    .button-icon {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .contact-title {
+      font-size: 22px;
+    }
+  
+    .contact-description {
+      font-size: 12px;
+    }
+  
+    h3 {
+      font-size: 14px;
+    }
+  
+    .form-input,
+    select {
+      padding: 8px;
+      font-size: 12px;
+    }
+  
+    .terms-label {
+      font-size: 11px;
+    }
+  
+    .form-submit {
+      padding: 8px 16px;
+      font-size: 12px;
+    }
+  
+    .button-icon {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .custom-checkbox {
+      width: 16px;
+      height: 16px;
+    }
+  
+    .custom-checkbox:checked::after {
+      font-size: 10px;
+    }
+  }
