@@ -50,7 +50,7 @@ const Technology = () => {
       text: "The autopilot is one of the devices that distinguishes real flight from an engine ground test fire. At our own in-loop facility, we have described the gimbaling technology that the autopilot uses to rotate the thrust.",
     },
     {
-      img: "https://pbs.twimg.com/media/GeBzCZ0a0AMjPet?format=jpg&name=large",
+      img: "https://th-i.thgim.com/public/news/47mnsd/article29324012.ece/alternates/BASE_SQUARE/ISTRAC-control-centre",
       text: "Our mission control room at SDSC SHAR is replicated in the mission control room design, which is based on the rehearsals we conducted in a standalone arrangement.",
     },
   ];
