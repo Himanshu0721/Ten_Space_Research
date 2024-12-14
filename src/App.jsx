@@ -8,6 +8,8 @@ import Conditions from "./components/footer/footerLink/Conditions";
 import Footer from "./components/footer/Footer";
 import Policies from "./components/footer/footerLink/Policies";
 import Technology from "./components/pages/technology/Technology";
+import Agnibaan from "./components/Agnibaan/Agnibaan.jsx";
+import Book from "./components/booklaunch/Book.jsx";
 
 function App() {
   return (
@@ -15,11 +17,13 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Contact" element={<Contact />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Conditions" element={<Conditions />} />
-        <Route path="/Policies" element={<Policies />} />
-        <Route path="/Technology" element={<Technology />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/conditions" element={<Conditions />} />
+        <Route path="/policies" element={<Policies />} />
+        <Route path="/technology" element={<Technology />} />
+        <Route path="/agnibaan" element={<Agnibaan />} />
+        <Route path="/book-launch" element={<Book />} />
       </Routes>
       <Footer />
     </BrowserRouter>
