@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Step1 from './Step1';
 import "./Book.css";
 
 const Book = () => {
@@ -35,7 +36,8 @@ const Book = () => {
             <form className="contact-form">
                 <div className="form-group-container">
                     <h3>STEP 01</h3>
-                    <div className="form-group">
+                    <Step1 />
+                    {/* <div className="form-group">
                         <select
                             id="LaunchLocation"
                             name="LaunchLocation"
@@ -52,7 +54,10 @@ const Book = () => {
                     </div>
                     <div className="form-group map-container">
                         <img src="https://agnikul.in/static/media/Asiapacific.aa4b17e04774ddfa2f41.png" alt="Map" />
-                    </div>
+                        <img src="https://agnikul.in/static/media/India.55558117c9de909157ab.png" alt="Map" />
+                        <img src="https://agnikul.in/static/media/Northerneurope.72937c0971e5b98a631e.png" alt="Map" />
+                        <img src="https://agnikul.in/static/media/Northernamerica.811ace263181b7c726fc.png" alt="Map" />
+                    </div> */}
                     <div className="form-group">
                         <select
                             id="OrbitalInclination"
@@ -161,19 +166,6 @@ const Book = () => {
                             onChange={handleChange}
                             required
                         />
-                    </div>
-                    <div className="terms-container">
-                        <label className="terms-label">
-                            <input
-                                type="checkbox"
-                                name="acceptTerms"
-                                checked={formData.acceptTerms}
-                                onChange={handleChange}
-                            />
-                            <span>I accept the </span>
-                            <a href="#" className="terms-link">terms, conditions and privacy policy</a>
-                            <span> of the company.</span>
-                        </label>
                     </div>
                 </div>
                 <div className="submit-container">
