@@ -1,0 +1,89 @@
+.careers-container {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .heading {
+    text-align: center;
+    color: #2d3748;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .intro {
+    text-align: center;
+    color: #4a5568;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .crew-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .crew-item {
+    background-color: #e2e8f0;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #2d3748;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+  
+  .crew-item:hover {
+    background-color: #cbd5e0;
+    transform: translateY(-5px);
+  }
+  
+  .application-info {
+    font-size: 1rem;
+    color: #2d3748;
+    line-height: 1.6;
+  }
+  
+  .application-info ul {
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style-type: disc;
+  }
+  
+  .email-link {
+    color: #3182ce;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .email-link:hover {
+    text-decoration: underline;
+  }
+  
+  .view-more {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .view-more-button {
+    background-color: #3182ce;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .view-more-button:hover {
+    background-color: #2b6cb0;
+  }
+  
