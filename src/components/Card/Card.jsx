@@ -1,7 +1,7 @@
 const Card = ({ item }) => {
   return (
     <>
-      <div className="card bg-base-100 w-96 shadow-2xl p-2 rounded-xl shadow-gray-300 hover:shadow-slate-700 ease-in duration-300 max-lg:w-80">
+      <div className="card bg-base-100 w-96 shadow-2xl p-2 rounded-xl shadow-gray-300 hover:shadow-slate-700 ease-in duration-300 max-lg:w-80 max-[691px]:w-60 max-[550px]:w-96 ">
         <figure className="">
           <img
             src={item.img}

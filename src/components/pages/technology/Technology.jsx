@@ -88,7 +88,7 @@ const Technology = () => {
             Read more about some of our software and hardware here.
           </p>
         </div>
-        <div className="h-full flex gap-10 px-4 justify-around w-full mt-5 mb-10 flex-wrap max-lg:gap-5">
+        <div className="h-full flex gap-10 px-4 justify-around w-full mt-5 mb-10 flex-wrap max-lg:gap-5 max-[550px]:flex max-[691px]:flex">
           {data.map((item, index) => (
             <Card item={item} key={index} />
           ))}

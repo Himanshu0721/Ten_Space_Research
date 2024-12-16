@@ -9,6 +9,7 @@ import Footer from "./components/footer/Footer";
 import Policies from "./components/footer/footerLink/Policies";
 import Technology from "./components/pages/technology/Technology";
 import Book from "./components/booklaunch/Book";
+import Agnibaan from "./components/Agnibaan/Agnibaan";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/Contact" element={<Contact />} />
         <Route path="/About" element={<About />} />
         <Route path="/Conditions" element={<Conditions />} />
+        <Route path="/agnibaan" element={<Agnibaan />} />
         <Route path="/Policies" element={<Policies />} />
         <Route path="/Technology" element={<Technology />} />
         <Route path="/book-launch" element={<Book />} />
