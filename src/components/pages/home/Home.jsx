@@ -18,7 +18,8 @@ const Home = () => {
             in, or working from space. So, why not design & build a product that
             makes the earth-to-space journey as simple, as quick, and as
             affordable as possible?
-          </p>
+          </p> 
+          
           <a
             href="#"
             className="inline-block text-white font-semibold hover:underline mt-4">
