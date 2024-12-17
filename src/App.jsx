@@ -10,23 +10,36 @@ import Technology from "./components/pages/technology/Technology";
 import Book from "./components/booklaunch/Book";
 import Agnibaan from "./components/Agnibaan/Agnibaan";
 import Career from "./components/pages/career/Career";
+import BookComplete from "./components/booklaunch/BookComplete";
 
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Contact" element={<Contact />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Conditions" element={<Conditions />} />
-        <Route path="/agnibaan" element={<Agnibaan />} />
-        <Route path="/Policies" element={<Policies />} />
-        <Route path="/Technology" element={<Technology />} />
-        <Route path="/book-launch" element={<Book />} />
-        <Route path="/careers" element={<Career />} />
+        {/* Routes where Navbar and Footer are included */}
+        <Route
+          path="/*"
+          element={
+            <>
+              <Navbar />
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/Contact" element={<Contact />} />
+                <Route path="/About" element={<About />} />
+                <Route path="/Conditions" element={<Conditions />} />
+                <Route path="/agnibaan" element={<Agnibaan />} />
+                <Route path="/Policies" element={<Policies />} />
+                <Route path="/Technology" element={<Technology />} />
+                <Route path="/book-launch" element={<Book />} />
+                <Route path="/careers" element={<Career />} />
+              </Routes>
+              <Footer />
+            </>
+          }
+        />
+        {/* Route without Navbar and Footer */}
+        <Route path="/book-complete" element={<BookComplete />} />
       </Routes>
-      <Footer />
     </BrowserRouter>
   );
 }

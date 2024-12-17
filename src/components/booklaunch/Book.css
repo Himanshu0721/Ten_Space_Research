@@ -124,6 +124,53 @@ select:focus {
     font-size: 20px;
 }
 
+.back-image {
+  left: 50%;
+  position: relative;
+  top: -20%;
+  transform: translate(-50%);
+  width: 90%;
+  z-index: -100000;
+}
+
+.middle-image {
+  height: 150px;
+  margin-bottom: -3%;
+  width: 150px;
+}
+
+.middle-banner {
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.middle-head {
+  color: #252526;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+
+.middle-text {
+  color: #21384299;
+  font-size: 1.2rem;
+}
+
+.middle-button {
+  background-color: #4d8c52;
+  border: none;
+  border-radius: 2.5rem;
+  margin-top: 1rem;
+  box-shadow: 0 10px 36px 0 #1d712333;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 1% 4%;
+}
+
+
 
  /* Responsive Styles */
 @media (max-width: 1024px) {
@@ -204,6 +251,13 @@ select:focus {
     .button-icon {
       font-size: 18px;
     }
+    .middle-head {
+      font-size: 1.8rem;
+    }
+
+    .middle-text {
+      font-size: 0.8rem;
+    }
   }
   
   @media (max-width: 320px) {
@@ -252,5 +306,13 @@ select:focus {
     .terms-container{
       font-size: 8px;
       
+    }
+
+    .middle-head {
+      font-size: 1.8rem;
+    }
+
+    .middle-text {
+      font-size: 0.8rem;
     }
   }
