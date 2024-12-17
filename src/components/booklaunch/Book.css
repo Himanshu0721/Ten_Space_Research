@@ -241,11 +241,16 @@ select:focus {
 
   @media (max-width: 320px) {
     .custom-checkbox {
-      width: 16px;
-      height: 16px;
+      width:  10px;
+      height: 10px;
     }
   
     .custom-checkbox:checked::after {
-      font-size: 10px;
+      font-size: 8px;
+    }
+
+    .terms-container{
+      font-size: 8px;
+      
     }
   }

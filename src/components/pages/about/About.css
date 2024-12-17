@@ -72,7 +72,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 40vh;
-    padding-left: 6.9%;
     position: relative;
     width: 100%;
 }
@@ -110,6 +109,7 @@
     top: 50%;
     transform: translateY(-50%);
     width: 49.2%;
+    margin: 0 6%;
 }
 
 .intermediate-banner-title {
