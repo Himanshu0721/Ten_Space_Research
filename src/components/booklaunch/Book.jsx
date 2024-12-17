@@ -1,8 +1,40 @@
 import React, { useState } from 'react';
 import Step1 from './Step1';
 import "./Book.css";
+import { useNavigate } from "react-router-dom";
 
 const Book = () => {
+
+  const [result, setResult] = React.useState("");
+  const navigate = useNavigate();
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "cd00d7b8-70d5-4754-b37d-4d5cac555875");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+      // Redirect to the /launch page
+      navigate("/book-complete");
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+
+
+
     const [formData, setFormData] = useState({
         LaunchLocation: "",
         OrbitalInclination: "",
@@ -33,7 +65,7 @@ const Book = () => {
                 </p>
             </div>
 
-            <form className="contact-form">
+            <form className="contact-form" onSubmit={onSubmit}>
                 <div className="form-group-container">
                     <h3>STEP 01</h3>
                     <Step1 />
