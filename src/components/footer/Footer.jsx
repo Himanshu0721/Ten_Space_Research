@@ -9,7 +9,7 @@ function Footer() {
         <div className="footer-section">
           <h3>Contact Us</h3>
           <p className="footer-highlight">info@entrepreneurshipnetwork.net</p>
-          <br />
+      
           <h3>Corporate Address</h3>
           <p>
           India accelerator<br />
