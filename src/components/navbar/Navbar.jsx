@@ -17,15 +17,15 @@ const Navbar = () => {
 
     return (
         <nav className="bg-white shadow-lg">
-            <div className="fix-container mx-auto px-4 flex justify-between items-center h-20 lg:justify-evenly">
+            <div className="fix-container mx-auto px-4 flex justify-between items-center h-20 lg:justify-evenly pr-2">
                 {/* Logo and Title */}
                 <div className="flex flex-row items-center lg:items-center">
                     <img
                         src={logo}
                         alt="Logo"
-                        className="w-12 h-12 lg:w-14 lg:h-14 mr-4"
+                        className="w-12 h-12 lg:w-14 lg:h-14 mr-2"
                     />
-                    <div className="font-bold text-[#4caf50] lg:order-none order-1 w-full lg:w-auto text-start lg:text-left text-2xl sm:text-xl lg:text-xl xl:text-2xl">
+                    <div className="font-bold text-[#4caf50] lg:order-none order-1 w-full lg:w-auto text-start lg:text-left text-lg sm:text-xl lg:text-xl xl:text-xl">
                         TEN SPACE RESEARCH
                     </div>
                 </div>
