@@ -49,70 +49,65 @@ const Home = () => {
           </div>
 
           {/* Image Section */}
-          <div className="relative overflow-hidden w-full lg:w-1/3 flex items-center justify-center sm:block hidden">
-  <div className="relative h-96 w-64">
-    <img
-      src="https://agnikul.in/static/media/home-agni.cc387bed4312c9ebd8ce.jpg"
-      alt="Agnibaan Rocket"
-      className="object-cover transition-transform duration-[4000ms] ease-in-out hover:translate-y-[-70%]"
-    />
+          
+            <div className="relative overflow-hidden w-min lg:w-1/3 flex items-center justify-center sm:justify-end sm:block hidden">
+    <div className="relative h-96 w-64">
+      <img
+        src="https://agnikul.in/static/media/home-agni.cc387bed4312c9ebd8ce.jpg"
+        alt="Agnibaan Rocket"
+        className="object-cover transition-transform duration-[4000ms] ease-in-out hover:translate-y-[-70%]"
+      />
+    </div>
   </div>
-</div>
 
-
-
-
-
-
-
-
-        </div>
-      </div>
-
-      {/* Facts & Figures */}
-      <div className="bg-white py-16 px-4 sm:px-8">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-black text-left">
-            Facts & Figures
-          </h2>
-          <p className="text-left text-gray-600 text-base sm:text-lg lg:text-xl mt-4">
-            Rocket first stage could have 4 / 5 / 6 or 7 engines. An optional third “baby” stage might be available for select missions.
-          </p>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-8">
-            {[
-              { title: "5", desc: "Configuration", hoverText: "A first stage with 4 / 5 / 6 or 7 engines. A “baby” stage could be made available for select missions." },
-              { title: "2", desc: "Weeks", hoverText: "Payload integration to launch won’t take more than a fortnight. Yes, launch-when-you-want." },
-              { title: "10+", desc: "Launch Ports", hoverText: "Access to 10+ launchports today. Access to 25+ coming soon. Yes, launch-where-you-want." },
-              { title: "100kg", desc: "Mass", hoverText: "Same price per kg for any payload in the 25-100 kg range. Yes, pay-for-what-you-launch." },
-            ].map((card, idx) => (
-              <div
-                key={idx}
-                className="bg-gray-50 shadow-lg rounded-lg py-8 text-center relative group"
-              >
-                <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-green-700">
-                  {card.title}
-                </h3>
-                <p className="text-gray-600">{card.desc}</p>
-                <div className="absolute inset-0 bg-green-700 text-white p-6 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 rounded-lg shadow-lg">
-                  <p className="text-sm sm:text-base text-center">{card.hoverText}</p>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
-      </div>
+
+        {/* Facts & Figures */}
+        
+        <div className="bg-white py-16 px-4 sm:px-8 ">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-black text-left">
+              Facts & Figures
+            </h2>
+            <p className="text-left text-gray-600 text-base sm:text-lg lg:text-xl mt-4">
+              Rocket first stage could have 4 / 5 / 6 or 7 engines. An optional third “baby” stage might be available for select missions.
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+              {[
+                { title: "5", desc: "Configuration", hoverText: "A first stage with 4 / 5 / 6 or 7 engines. A “baby” stage could be made available for select missions." },
+                { title: "2", desc: "Weeks", hoverText: "Payload integration to launch won’t take more than a fortnight. Yes, launch-when-you-want." },
+                { title: "10+", desc: "Launch Ports", hoverText: "Access to 10+ launchports today. Access to 25+ coming soon. Yes, launch-where-you-want." },
+                { title: "100kg", desc: "Mass", hoverText: "Same price per kg for any payload in the 25-100 kg range. Yes, pay-for-what-you-launch." },
+              ].map((card, idx) => (
+                <div
+                  key={idx}
+                  className="bg-gray-50 shadow-lg rounded-lg py-8 text-center relative group"
+                >
+                  <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-green-700">
+                    {card.title}
+                  </h3>
+                  <p className="text-gray-600">{card.desc}</p>
+                  <div className="absolute inset-0 bg-green-700 text-white p-6 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 rounded-lg shadow-lg">
+                    <p className="text-sm sm:text-base text-center">{card.hoverText}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
 
       {/* Final Call-to-Action */}
       <div
-        className="flex flex-col items-center justify-center min-h-screen bg-white text-center px-4 py-16"
+        className="flex flex-col items-center justify-center bg-white text-center px-4 py-8"
         style={{
           backgroundImage: "url('https://agnikul.in/static/media/form-back.5e6628f16d8f506b363b.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mt-2">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mt-4">
           Ready To Launch?
         </h2>
         <p className="text-gray-500 text-base sm:text-lg lg:text-2xl mt-8">
