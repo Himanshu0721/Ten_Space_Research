@@ -1,0 +1,243 @@
+/* Laptop Screen Css */
+
+.contactform-fix-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 160%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding-top: 0;
+    margin: 20px;
+}
+
+.contact-details {
+    flex: 1;
+    padding: 20px;
+    padding-top: 0;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.contact-details h2 {
+    margin-bottom: 30px;
+    display: inline-block;
+    font-size: 1.9em;
+    text-align: center;
+    margin-left: 28%;
+}
+
+.contact-details p {
+    margin: 10px;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.form-section {
+    flex: 1;
+    padding: 20px;
+    margin-top: 40px; 
+    width: 50%;
+}
+
+.form-section h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.9em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    color: #000;
+}
+
+input,
+textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.msg-button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.msg-button:hover {
+    background-color: #fff;
+    color: #4caf50;
+}
+
+
+
+/* Responsive Design CSS */
+
+@media (max-width: 1024px) {
+
+    .content-wrapper {
+        display: flex;
+        gap: 30px;
+    }
+    .contact-details {
+        margin-bottom: 20px; 
+    }
+
+    .form-section {
+        margin-top: 30px; 
+    }
+
+    .contact-details h2,
+    .form-section h2 {
+        text-align: center;
+        font-size: 1.7em;
+    }
+    .contact-details p {
+        margin: 10px;
+        font-size: 1.2em;
+
+    }
+
+    input,
+    textarea {
+        font-size: 1em;
+    }
+   
+}
+
+@media (max-width: 768px) {
+    .contactform-fix-container {
+        height: auto;
+        border-radius: 0;
+    }
+
+    .content-wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 20px;
+        margin: 0;
+        border-radius: 0;
+
+    }
+
+    .contact-details,
+    .form-section {
+        flex: none;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contact-details {
+        margin-top: 5%;
+        padding-left: 5%;
+    }
+
+    .contact-details h2 {
+        margin-left: 33%;
+    }
+
+    .contact-details h2,
+    .form-section h2 {
+        text-align: center;
+        font-size: 1.6em;
+    }
+
+    .contact-details p {
+        margin: 10px;
+        font-size: 1.1em;
+        margin-top: 20px;
+        padding-right: 10px;
+        margin-left: 0;
+
+    }
+
+    input,
+    textarea {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .contactform-fix-container {
+        height: auto;
+        border-radius: 0;
+    }
+
+    .content-wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 20px;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .contact-details,
+    .form-section {
+        flex: none;
+        width: 100%;
+        padding: 30px;
+    }
+
+    .contact-details h2,
+    .form-section h2 {
+        text-align: center;
+        font-size: 1.2em;
+        align-items: center;
+        font-size: 1.3em;
+    }
+
+    .contact-details h2 {
+        margin-left: 30%;
+    }
+
+    .contact-details p {
+        margin: 10px;
+        font-size: 1em;
+        margin-top: 20px;
+        padding-right: 10px;
+        margin-left: 5%;
+    }
+
+    input,
+    textarea {
+        font-size: 0.9em;
+    }
+    .contact-details {
+        margin-bottom: 10px;
+        padding-top: 0;
+    }
+
+    .form-section {
+        margin-top: 15px;
+    }
+}
